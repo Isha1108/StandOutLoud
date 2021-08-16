@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Buy-Products</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/static/favicon.png" rel="icon">
+    <link href="/static/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/ionicons.min.css" rel="stylesheet">
+    <link href="/static/animate.min.css" rel="stylesheet">
+    <link href="/static/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/static/style_history.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.3/esm/ionicons.min.js" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" style="height: 50px;">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <h1 style="margin-left: 15px;"><a style="text-decoration: none;text-transform: capitalize; vertical-align: middle;" href="Customer_home" class="scrollto">StandOutLoud</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="Customer_home">Home</a></li>
+                    <li><a href="Customer_home#features">Features</a></li>
+                    <li><a href="index#about">About Us</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <br>
+
+        <!-- ======= Breadcrumbs Section ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <ol>
+                        <li><a href="Customer_home">Home</a></li>
+                        <li><a href="History">Order History</a></li>
+                        <li>Payments</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section><!-- End Breadcrumbs Section -->
+
+
+
+
+        <section id="more-features9" class="login_bg">
+            <div id="Restau_form" class="section-title">
+                <br>
+                <br>
+                <h2 id="signup" style="text-align: center;" class="gradient-text">Payment</h2>
+
+                <p style="text-align:center;">
+
+                <form action="{{url_for('pay')}}" method="POST">
+
+                    <div class="field-wrap" id="passwrap1" style="text-align: center; margin-right: 80px;">
+                        <label for="waste">Business Name: joey</label>
+                        {{p}}
+
+                    </div>
+
+                    <div class="field-wrap" id="addrwarp1">
+                        <label id="quantity" style="margin-left: 48px;">
+                            Amount:<span class="req"> </span>
+                        </label>
+                        <input type="number" name="amount" required autocomplete="off" id="quant_ip"
+                            style="width: 178px;" />
+                    </div>
+                    <br>
+                    <!-- <div style="margin-left:110px;"> -->
+                    <script
+            src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="rzp_test_LmhpX8lHqglzls"
+            data-amount="{{payment['amount']}}"
+            data-currency="INR"
+            data-order_id = "{{payment['order_id']}}"
+            data-buttontext = "Pay with Razorpay"
+            data-image="/static/vk.jpg">
+        </script>
+        <!-- </div> -->
+                    
+
+                </form>
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main><!-- End #main -->
+
+
+    <!-- Vendor JS Files -->
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.bundle.min.js"></script>
+    <script src="/static/jquery.easing.min.js"></script>
+    <script src="/static//validate.js"></script>
+    <script src="/static/wow.min.js"></script>
+    <script src="/static/venobox.min.js"></script>
+    <script src="/static/superfish.min.js"></script>
+    <script src="/static/hoverIntent.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/static/main.js"></script>
+
+
+</body>
+
+</html>

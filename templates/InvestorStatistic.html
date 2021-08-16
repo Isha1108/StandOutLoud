@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+        <title>Investor-Home-page</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+    
+        <!-- Favicons -->
+        <link href="/static/favicon.png" rel="icon">
+        <link href="/static/apple-touch-icon.png" rel="apple-touch-icon">
+    
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"
+            rel="stylesheet">
+    
+        <!-- Vendor CSS Files -->
+        <link href="/static/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/ionicons.min.css" rel="stylesheet">
+        <link href="/static/animate.min.css" rel="stylesheet">
+        <link href="/static/font-awesome.min.css" rel="stylesheet">
+        <link href="/static/venobox.css" rel="stylesheet">
+    
+        <!-- Template Main CSS File -->
+        <link href="/static/style_Investor.css" rel="stylesheet">
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    </head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" style="height: 50px;">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <h1 style="margin-left: 15px;"><a style="text-decoration: none;text-transform: capitalize; vertical-align: middle" href="Investor_home#features" class="scrollto">StandOutLoud</a>
+                </h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="Investor_home#features">Home</a></li>
+                    <li><a href="index#about">About Us</a></li>
+                    <li><a href="Investor_home#features">Features</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs Section ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <br>
+                    <ol>
+                        <br>
+                        <li><a href="Investor_home#features">Home</a></li>
+                        <li>Local Business Statistics</li>
+                    </ol>
+                    <br>
+                </div>
+            </div>
+        </section><!-- End Breadcrumbs Section -->
+
+        <section class="inner-page">
+
+            {% for i in ist1 %}
+            <div class="container" id="camwrap" class="box wow fadeInLeft">
+                <section id="more-features3" class="section-bg" style="text-align: center; margin-top: -35px;padding: 35px 0px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="search-container" style="margin-top: -38px; margin-bottom: 15px;">
+                                <form action="" method="POST">
+                                    <!-- <input type="text" style="width: 268px; float: left; margin-left: 10px;"
+                                        placeholder="Search by Locality or by Business Name" name="search"> -->
+                                    <!-- <button type="submit"
+                                        style="width: 37px; float: right; margin-right: 10px; margin-left: 0px; "><i
+                                            class="fa fa-search"></i></button> -->
+                                </form>
+                            </div>
+                            
+
+                            <div class="container" id="box1" style="padding: 0px; max-height: 1000vh; ">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="box wow fadeInLeft"
+                                            style="padding: 0px; height: 155px; margin: 0px 0px 10px 18px; width: 310px">
+                                            <div class="section-title2" id="dealer1"
+                                                style="text-align: left; color: black; float: left; font-size: 17px;  min-width: 34vh;">
+                                                <label style="padding-top:10px;" for="waste"><strong>{{i[2]}}</strong> <a> </a></label> <br>
+                                                <br>
+                                                <strong>Owner: </strong>  {{i[1]}}
+                                                <br>
+                                                <strong>Current Sales: </strong>{{i[5]}}
+                                                <br>
+                                                <strong>Predicted Sales: </strong>{{i[6]}}
+                
+                                            </div>
+                                            <div class="icon" style="float: right; margin: 40px 18px 0px 0px;"><i class="fa fa-phone"
+                                                    style="margin: 35px 10px 0px 0px;  font-size: 32px; text-align:center;"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                           
+            </div>
+
+        </section>
+
+        </div>
+        {% endfor %}
+        </section>
+
+    </main><!-- End #main -->
+
+     <!-- Vendor JS Files -->
+     <script src="/static/jquery.min.js"></script>
+     <script src="/static/bootstrap.bundle.min.js"></script>
+     <script src="/static/jquery.easing.min.js"></script>
+     <script src="/static/validate.js"></script>
+     <script src="/static/wow.min.js"></script>
+     <script src="/static/venobox.min.js"></script>
+     <script src="/static/superfish.min.js"></script>
+     <script src="/static/hoverIntent.js"></script>
+ 
+     <!-- Template Main JS File -->
+     <script src="/static/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+</head>
+<body>
+    <form action="{{url_for('pay')}}" method="POST">
+        <script
+            src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="rzp_test_LmhpX8lHqglzls"
+            data-amount="{{payment['amount']}}"
+            data-currency="INR"
+            data-order_id = "{{payment['order_id']}}"
+            data-buttontext = "Pay with Razorpay"
+            data-name = "{{shop_details[0]}}"
+            data-description="{{shop_details[1]}}"
+            data-image="/static/vk.jpg">
+        </script>
+        <input type="hidden" name="Hidden Element" name='hidden' >
+    </form>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Register-page</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="/static/favicon.png" rel="icon">
+    <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/ionicons.min.css" rel="stylesheet">
+    <link href="/static/animate.min.css" rel="stylesheet">
+    <link href="/static/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/venobox.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="/static/style_home.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.3/esm/ionicons.min.js" rel="stylesheet">
+    
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" style="height: 50px;">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <h1 style="margin-left: 15px;"><a style="text-decoration: none;text-transform: capitalize; vertical-align: middle;" href="index" class="scrollto">StandOutLoud</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="Customer_home">Home</a></li>
+                    <li><a href="index#about">About Us</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <section id="more-features" class="login_bg">
+            <div id="Register" class="section-title">
+                <br>
+                <h2 id="signup">Sign Up</h2>
+
+                <p style="text-align:center;">
+                <form action="{{url_for('register')}}" method="post">
+
+                    <p style="text-align:center;">
+                    <div class="field-wrap" id="namewrap1">
+                        <label style="padding-right: 20px;">
+                            User Id:<span class="req" id="name1"> </span>
+                        </label>
+                        <input type="text" required autocomplete="off" id="nameip1" name="User_id">
+                    </div>
+                    </p>
+                    <div class="field-wrap" id="passwrap1">
+                        <label>
+                            Password:<span class="req" id="pass1"> </span>
+                        </label>
+                        <input style="margin-right:2px;" type="password" required autocomplete="off" id="passip1" name="user_password">
+                    </div>
+
+                    <div class="field-wrap" id="passwrap1">
+                        <label >
+                            Name:<span class="req" id="pass1"> </span>
+                        </label>
+                        <input type="text" style="margin-left:23px;" required autocomplete="off" id="passip1" name="Name">
+                    </div>
+
+                    <div class="field-wrap" id="Contactwrap">
+                        <label>
+                            Contact Number<span class="req">: </span>
+                        </label>
+                        <input type="number" required autocomplete="off" name="contact">
+                    </div>
+
+                    <div class="field-wrap" id="citywrap1">
+                        <label>
+                            City<span class="req" id="city1">: </span>
+                        </label>
+                        <input type="text" required autocomplete="off" id="loclip1" name="city">
+                    </div>
+
+                    <div class="field-wrap" id="localwrap1">
+                        <label>
+                            Locality<span class="req" id="local1">: </span>
+                        </label>
+                        <input type="text" required autocomplete="off" id="loclip1" name="locality">
+                    </div>
+
+                   
+
+                    <div class="field-wrap" id="addrwarp1">
+                        <label>
+                            Address<span class="req" id="addr1">: </span>
+                        </label>
+                        <input type="text" required autocomplete="off" id="addrip1" name="address">
+                    </div>
+
+                    <div class="field-wrap" id="TypeOfUser">
+                        <label for="waste" style="margin-left: 20px;" >User-type:</label>
+                        <select  id="waste" style=" width: 155px; margin-left: 50px;" name="usertype">
+                            <option  name='Customer'>Customer</option>
+                            <option  name='Entrepreneur'>Entrepreneur</option>
+                            <option name='Investor'>Investor</option>
+                        </select>
+
+                    </div>
+
+                    <div class="field-wrap" id="Businesswrap">
+                        <label>
+                            Business Name<span class="req">: </span>
+                        </label>
+                        <input style="margin-left:10px;" type="text" required autocomplete="off" name="business_field">
+                    </div>
+
+                    <div class="field-wrap" id="Contactwrap">
+                        <label>
+                            Pincode<span class="req">: </span>
+                        </label>
+                        <input style="margin-left: 60px;" type="number" required autocomplete="off" name="user_pincode">
+                    </div>                   
+
+                  
+
+                 
+
+                    <!-- <div class="field-wrap" id="TypeOfUser">
+                        <label id="usr_type"> User-type: </label> 
+                            <input type="radio" name="usertype" class="radio"id="Customer"> Personal 
+                            <input type="radio" name="usertype" class="radio" id="Dealer"> Scrap-Dealer<br>
+                            <input type="radio" name="usertype" class="radio" id="Customer"> Restaurant/Caterers 
+                            <input type="radio" name="usertype" class="radio" id="Dealer"> Composite-Dealer
+
+                    </div> -->
+
+                    <!-- <p class="forgot"><a href="#">Forgot Password?</a></p> -->
+
+                    <button class="button button1" ><b>Sign Up</b></button>
+
+                </form>
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main><!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.bundle.min.js"></script>
+    <script src="/static/jquery.easing.min.js"></script>
+    <script src="/static/validate.js"></script>
+    <script src="/static/wow.min.js"></script>
+    <script src="/static/venobox.min.js"></script>
+    <script src="/static/superfish.min.js"></script>
+    <script src="/static/hoverIntent.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/static/main.js"></script>
+
+</body>
+
+</html>
