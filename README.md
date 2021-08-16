@@ -37,9 +37,13 @@ b.	Statistics: Here the investor can see the number of current sales of items/se
 
 Tech Stack:
 Frontend: HTML/CSS/JavaScript
+
 Backend: Flask (Python)
+
 Database: MySQL
+
 Machine Learning: XGBOOST and lightgbm (for predicting the sales for next month)
+
 Payment: Razorpay Integration
 
 
